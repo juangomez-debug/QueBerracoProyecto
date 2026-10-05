@@ -1,0 +1,338 @@
+@media (max-width: 900px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .site-header {
+    padding-inline: 28px;
+  }
+
+  .site-nav {
+    gap: 18px;
+  }
+
+  .site-nav a {
+    font-size: 0.6875rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4.875rem;
+  }
+
+  .section-wrap {
+    padding: 88px 36px;
+  }
+
+  .products-banner__heading h2 {
+    font-size: 3.125rem;
+  }
+
+  .about-grid,
+  .coffee-grid {
+    gap: 48px;
+  }
+
+  .about-copy h2,
+  .coffee-copy h2,
+  .services-heading h2,
+  .experiences-copy h2,
+  .gallery-heading h2,
+  .contact-copy h2 {
+    font-size: 3.125rem;
+  }
+
+  .coffee-photo,
+  .coffee-photo img {
+    min-height: 390px;
+    height: 390px;
+  }
+
+  .service-row {
+    grid-template-columns: 60px 1fr auto;
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+
+  .site-footer {
+    padding-inline: 28px;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .site-header {
+    padding-inline: 20px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-logo {
+    height: 40px;
+    max-width: 144px;
+  }
+
+  .brand-name {
+    font-size: 1.125rem;
+  }
+
+  .menu-toggle {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    align-content: center;
+    justify-items: end;
+    gap: 6px;
+    padding: 10px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 23px;
+    height: 1px;
+    background: var(--brand-primary);
+    transition: transform 180ms ease;
+  }
+
+  .menu-toggle span:last-child {
+    width: 16px;
+  }
+
+  .menu-toggle[aria-expanded='true'] span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded='true'] span:last-child {
+    width: 23px;
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: grid;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background: var(--bg-base);
+    transition: max-height 220ms ease, padding 220ms ease;
+  }
+
+  .site-nav.is-open {
+    max-height: 440px;
+    padding-block: 8px 20px;
+    border-bottom: 1px solid color-mix(in srgb, var(--brand-primary) 20%, transparent);
+  }
+
+  .site-nav a {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--brand-primary) 16%, transparent);
+    font-size: 0.8125rem;
+  }
+
+  .site-nav .nav-contact {
+    margin-top: 10px;
+    padding: 11px 12px;
+    border: 1px solid var(--brand-primary);
+    color: var(--brand-primary);
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-section {
+    min-height: min(680px, calc(86svh - var(--header-height)));
+    align-items: end;
+  }
+
+  .hero-media img {
+    object-position: 58% center;
+  }
+
+  .hero-shade {
+    background: color-mix(in srgb, var(--bg-dark) 53%, transparent);
+  }
+
+  .hero-content {
+    padding: 80px 24px 96px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.875rem;
+  }
+
+  .hero-description {
+    max-width: 360px;
+    margin-block: 22px 24px;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    gap: 8px 18px;
+  }
+
+  .hero-location {
+    right: 24px;
+    bottom: 20px;
+    left: 24px;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+
+  .section-wrap {
+    padding: 72px 24px;
+  }
+
+  .products-banner__heading h2 {
+    font-size: 2.75rem;
+  }
+
+  .product-card {
+    min-height: 190px;
+    padding: 22px;
+  }
+
+  .product-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-grid,
+  .coffee-grid,
+  .services-heading,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .about-mark {
+    width: 96px;
+    margin: 0 0 8px 8px;
+    font-size: 1.625rem;
+  }
+
+  .about-copy h2,
+  .coffee-copy h2,
+  .services-heading h2,
+  .experiences-copy h2,
+  .gallery-heading h2,
+  .contact-copy h2 {
+    font-size: 2.75rem;
+  }
+
+  .about-copy > p:not(.section-kicker),
+  .coffee-copy > p:not(.section-kicker) {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  .coffee-grid {
+    gap: 38px;
+  }
+
+  .coffee-photo,
+  .coffee-photo img {
+    min-height: 310px;
+    height: 310px;
+  }
+
+  .photo-caption {
+    right: -8px;
+  }
+
+  .services-heading {
+    margin-bottom: 34px;
+  }
+
+  .service-row {
+    grid-template-columns: 34px 1fr;
+    gap: 8px 14px;
+    min-height: 78px;
+    padding-block: 12px;
+  }
+
+  .service-row h3 {
+    font-size: 1.625rem;
+  }
+
+  .service-note {
+    grid-column: 2;
+  }
+
+  .experiences-section {
+    min-height: 480px;
+  }
+
+  .experiences-copy {
+    padding: 76px 24px;
+  }
+
+  .gallery-heading {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .gallery-heading > p {
+    margin-top: 16px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 12px;
+  }
+
+  .gallery-item:nth-child(2) {
+    margin-top: 28px;
+  }
+
+  .gallery-item:last-child {
+    grid-column: 1 / -1;
+    width: 78%;
+  }
+
+  .gallery-item img {
+    height: 200px;
+  }
+
+  .gallery-item:last-child img {
+    height: 220px;
+  }
+
+  .gallery-item figcaption {
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
+
+  .contact-location {
+    padding: 18px 0 0;
+    border-top: 1px solid color-mix(in srgb, var(--text-inverse) 45%, transparent);
+    border-left: 0;
+  }
+
+  .site-footer {
+    min-height: 120px;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    padding: 22px 24px;
+  }
+
+  .site-footer p {
+    order: 1;
+    width: 100%;
+  }
+}

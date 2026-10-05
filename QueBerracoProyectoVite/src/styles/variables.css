@@ -1,0 +1,30 @@
+:root {
+  --color-fondo: #fce1a8;
+  --color-marca: #7b201a;
+  --text-titulos: var(--color-marca);
+  --text-cuerpo: var(--color-marca);
+  --text-etiquetas: var(--color-marca);
+
+  --bg-base: var(--color-fondo);
+  --bg-surface: #fff3d6;
+  --bg-dark: #2a100d;
+  --brand-primary: var(--color-marca);
+  --brand-hover: #5e1510;
+  --brand-light: #a6423b;
+  --text-main: var(--text-cuerpo);
+  --text-muted: var(--text-cuerpo);
+  --text-inverse: var(--color-fondo);
+  --border-color: #e8c88c;
+
+  --color-primary: var(--brand-primary);
+  --color-cream: var(--bg-base);
+  --color-dark: var(--bg-dark);
+  --color-light: var(--bg-base);
+  --color-paper: var(--bg-surface);
+  --color-muted: var(--text-cuerpo);
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-prata: 'Prata', serif;
+  --content-width: 1240px;
+  --header-height: 82px;
+}

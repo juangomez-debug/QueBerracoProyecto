@@ -1,11 +1,12 @@
 import { useState } from 'react'
 
 const navigation = [
-  { label: 'Nosotros', href: '#nosotros' },
+  { label: 'Productos', href: '#productos', className: 'nav-contact' },
   { label: 'Café', href: '#cafe' },
   { label: 'Servicios', href: '#servicios' },
   { label: 'Experiencias', href: '#experiencias' },
   { label: 'Galería', href: '#galeria' },
+  { label: 'Contacto', href: '#contacto', className: 'nav-contact' },
 ]
 
 function SiteHeader() {
@@ -38,17 +39,15 @@ function SiteHeader() {
         aria-label="Navegación principal"
       >
         {navigation.map((item) => (
-          <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)}>
+          <a
+            key={item.href}
+            className={item.className}
+            href={item.href}
+            onClick={() => setMenuOpen(false)}
+          >
             {item.label}
           </a>
         ))}
-        <a
-          className="nav-contact"
-          href="#contacto"
-          onClick={() => setMenuOpen(false)}
-        >
-          Contacto
-        </a>
       </nav>
     </header>
   )
